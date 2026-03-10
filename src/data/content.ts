@@ -6,7 +6,7 @@ export const intro = {
 export const scratchCard = {
   revealText: "Giuliana, esto es para ti...",
   buttonText: "Continuar",
-  image: "/img/Gemini_Generated_Image_nixaranixaranixa.png",
+  image: "/img/c86f21df-2701-4e1a-b5bd-c611a97a9fdf.jpg",
 };
 
 export const timelineSections = [
@@ -16,7 +16,7 @@ export const timelineSections = [
     alt: "Giuliana foto 1",
   },
   {
-    image: "/img/c86f21df-2701-4e1a-b5bd-c611a97a9fdf.jpg",
+    image: "/img/Gemini_Generated_Image_nixaranixaranixa.png",
     message: "La que estudia hasta las 3am pero siempre tiene tiempo para escuchar",
     alt: "Giuliana foto 2",
   },
