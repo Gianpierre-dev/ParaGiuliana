@@ -1,0 +1,777 @@
+[     535ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <PopChild pop={false} isPresent={true} anchorX="left" anchorY="top" root={undefined}>
+      <PopChildMeasure isPresent={true} childRef={{current:null}} sizeRef={{...}} pop={false}>
+        <Intro onComplete={function onComplete}>
+          <AnimatePresence onExitComplete={function handleExitComplete}>
+            <PresenceChild isPresent={true} initial={undefined} custom={undefined} presenceAffectsLayout={true} ...>
+              <PopChild pop={false} isPresent={true} anchorX="left" anchorY="top" root={undefined}>
+                <PopChildMeasure isPresent={true} childRef={{current:null}} sizeRef={{...}} pop={false}>
+                  <motion.section className="fixed inse..." initial={{opacity:1}} exit={{opacity:0}} ...>
+                    <section className="fixed inse..." style={{opacity:1}} ref={function}>
+                      <Particles>
+                        <div className="absolute i...">
+                          <motion.div className="absolute r..." style={{left:"49.0...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "49.06562429395287%"
+-                               left: "58.3635%"
++                               top: "65.0023824263015%"
+-                               top: "62.6395%"
++                               width: 2.623075017559496
+-                               width: "2.32098px"
++                               height: 2.623075017559496
+-                               height: "2.32098px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"7.13...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "7.130338467189279%"
+-                               left: "44.6717%"
++                               top: "42.648166058398495%"
+-                               top: "85.626%"
++                               width: 4.10583243291095
+-                               width: "4.76038px"
++                               height: 4.10583243291095
+-                               height: "4.76038px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"83.2...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "83.24413290592096%"
+-                               left: "61.4496%"
++                               top: "97.5693030975788%"
+-                               top: "39.3232%"
++                               width: 2.5328483552283676
+-                               width: "4.35861px"
++                               height: 2.5328483552283676
+-                               height: "4.35861px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"8.82...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "8.82338822346911%"
+-                               left: "83.5147%"
++                               top: "40.83300376057174%"
+-                               top: "86.4569%"
++                               width: 5.607239803568663
+-                               width: "2.38002px"
++                               height: 5.607239803568663
+-                               height: "2.38002px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"34.7...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "34.713541780314394%"
+-                               left: "8.30594%"
++                               top: "57.38162277721989%"
+-                               top: "10.2037%"
++                               width: 2.101853749691901
+-                               width: "2.2524px"
++                               height: 2.101853749691901
+-                               height: "2.2524px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"41.7...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "41.75145717534132%"
+-                               left: "49.0665%"
++                               top: "77.43218278736913%"
+-                               top: "22.3719%"
++                               width: 4.44011270415718
+-                               width: "2.9981px"
++                               height: 4.44011270415718
+-                               height: "2.9981px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"32.6...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "32.64389594877339%"
+-                               left: "12.0495%"
++                               top: "53.9813504713772%"
+-                               top: "4.00798%"
++                               width: 2.0891209487561793
+-                               width: "5.21425px"
++                               height: 2.0891209487561793
+-                               height: "5.21425px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"68.9...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "68.96641838391379%"
+-                               left: "98.1936%"
++                               top: "34.85451779191183%"
+-                               top: "46.251%"
++                               width: 5.960627222067793
+-                               width: "5.8796px"
++                               height: 5.960627222067793
+-                               height: "5.8796px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"76.5...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "76.59904217767811%"
+-                               left: "94.8336%"
++                               top: "52.235560383598255%"
+-                               top: "55.3998%"
++                               width: 4.687793212971734
+-                               width: "3.35531px"
++                               height: 4.687793212971734
+-                               height: "3.35531px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"63.7...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "63.73093535838839%"
+-                               left: "92.6025%"
++                               top: "79.90302634004777%"
+-                               top: "78.3944%"
++                               width: 2.3107475869859395
+-                               width: "2.09791px"
++                               height: 2.3107475869859395
+-                               height: "2.09791px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"17.4...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "17.489896637646908%"
+-                               left: "2.29244%"
++                               top: "79.98912951865145%"
+-                               top: "99.7133%"
++                               width: 2.2781036900067884
+-                               width: "3.39491px"
++                               height: 2.2781036900067884
+-                               height: "3.39491px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"44.7...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "44.7220690116061%"
+-                               left: "58.0016%"
++                               top: "84.45434646783893%"
+-                               top: "53.9635%"
++                               width: 3.4897575483096204
+-                               width: "5.30733px"
++                               height: 3.4897575483096204
+-                               height: "5.30733px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"74.7...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "74.72180114498587%"
+-                               left: "20.6364%"
++                               top: "92.56294875439839%"
+-                               top: "32.3228%"
++                               width: 4.580632417844727
+-                               width: "4.7758px"
++                               height: 4.580632417844727
+-                               height: "4.7758px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"50.8...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "50.84971863355479%"
+-                               left: "74.9471%"
++                               top: "0.5572235130720471%"
+-                               top: "40.3953%"
++                               width: 3.026032571404681
+-                               width: "2.32294px"
++                               height: 3.026032571404681
+-                               height: "2.32294px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"85.8...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "85.84781906487699%"
+-                               left: "24.5552%"
++                               top: "52.57723534794045%"
+-                               top: "86.7717%"
++                               width: 2.184647979248466
+-                               width: "2.35622px"
++                               height: 2.184647979248466
+-                               height: "2.35622px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"7.54...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "7.5446864439814965%"
+-                               left: "55.2352%"
++                               top: "68.91700040554416%"
+-                               top: "90.6142%"
++                               width: 2.992036987800402
+-                               width: "2.49348px"
++                               height: 2.992036987800402
+-                               height: "2.49348px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"58.9...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "58.90991468336032%"
+-                               left: "45.9156%"
++                               top: "96.95747975499619%"
+-                               top: "14.4853%"
++                               width: 5.254975112399043
+-                               width: "3.09034px"
++                               height: 5.254975112399043
+-                               height: "3.09034px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"21.5...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "21.599250115699277%"
+-                               left: "99.1954%"
++                               top: "43.78918741182966%"
+-                               top: "26.5467%"
++                               width: 4.717493255847359
+-                               width: "5.08057px"
++                               height: 4.717493255847359
+-                               height: "5.08057px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"44.5...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "44.54676874779088%"
+-                               left: "18.2937%"
++                               top: "42.25459306754791%"
+-                               top: "97.1675%"
++                               width: 3.4634244525909907
+-                               width: "5.69713px"
++                               height: 3.4634244525909907
+-                               height: "5.69713px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"52.2...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "52.22636001486701%"
+-                               left: "35.412%"
++                               top: "21.942068088726707%"
+-                               top: "46.8668%"
++                               width: 2.266928973805504
+-                               width: "5.21865px"
++                               height: 2.266928973805504
+-                               height: "5.21865px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"84.7...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "84.76570573612021%"
+-                               left: "26.6164%"
++                               top: "27.105744628909523%"
+-                               top: "93.853%"
++                               width: 5.229233806491333
+-                               width: "2.5271px"
++                               height: 5.229233806491333
+-                               height: "2.5271px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"60.9...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "60.94051168334247%"
+-                               left: "75.2991%"
++                               top: "99.8587447141988%"
+-                               top: "29.2109%"
++                               width: 2.4058700987987915
+-                               width: "4.56143px"
++                               height: 2.4058700987987915
+-                               height: "4.56143px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"52.0...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "52.0925561026231%"
+-                               left: "22.4658%"
++                               top: "95.9836852069306%"
+-                               top: "81.6639%"
++                               width: 5.337948155205051
+-                               width: "3.44122px"
++                               height: 5.337948155205051
+-                               height: "3.44122px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"51.6...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "51.60028912625425%"
+-                               left: "45.3094%"
++                               top: "65.63763088570988%"
+-                               top: "10.9721%"
++                               width: 5.85837324895041
+-                               width: "2.23684px"
++                               height: 5.85837324895041
+-                               height: "2.23684px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"50.7...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "50.75162098385113%"
+-                               left: "96.4412%"
++                               top: "66.23465075398316%"
+-                               top: "54.889%"
++                               width: 2.427653768592327
+-                               width: "5.92791px"
++                               height: 2.427653768592327
+-                               height: "5.92791px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"38.3...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "38.35570309919765%"
+-                               left: "23.9394%"
++                               top: "87.29386998781659%"
+-                               top: "57.3852%"
++                               width: 4.01032115542724
+-                               width: "5.45106px"
++                               height: 4.01032115542724
+-                               height: "5.45106px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"79.0...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "79.08331581890032%"
+-                               left: "61.2937%"
++                               top: "33.231378661491405%"
+-                               top: "53.7861%"
++                               width: 3.1300042749735075
+-                               width: "4.5974px"
++                               height: 3.1300042749735075
+-                               height: "4.5974px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"80.3...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "80.36641938370032%"
+-                               left: "78.7755%"
++                               top: "60.249886514498975%"
+-                               top: "24.7689%"
++                               width: 5.89865686928378
+-                               width: "3.14237px"
++                               height: 5.89865686928378
+-                               height: "3.14237px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"40.0...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "40.08810437038122%"
+-                               left: "34.3147%"
++                               top: "73.15481089211288%"
+-                               top: "68.1389%"
++                               width: 2.8092083163963713
+-                               width: "3.85077px"
++                               height: 2.8092083163963713
+-                               height: "3.85077px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"92.6...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "92.65020947737968%"
+-                               left: "86.1848%"
++                               top: "41.4826928576882%"
+-                               top: "78.4417%"
++                               width: 3.3207775810995206
+-                               width: "3.14984px"
++                               height: 3.3207775810995206
+-                               height: "3.14984px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"44.9...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "44.98723248020995%"
+-                               left: "11.9369%"
++                               top: "31.871492875048357%"
+-                               top: "63.1988%"
++                               width: 3.963368118196621
+-                               width: "4.20715px"
++                               height: 3.963368118196621
+-                               height: "4.20715px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"50.8...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "50.85444938193737%"
+-                               left: "48.2454%"
++                               top: "94.63492844568674%"
+-                               top: "87.9739%"
++                               width: 3.356273229747392
+-                               width: "2.12145px"
++                               height: 3.356273229747392
+-                               height: "2.12145px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"16.4...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "16.403528857901463%"
+-                               left: "96.9577%"
++                               top: "8.992642694044338%"
+-                               top: "78.8748%"
++                               width: 2.2552051147050243
+-                               width: "3.1641px"
++                               height: 2.2552051147050243
+-                               height: "3.1641px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"22.0...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "22.06275558608156%"
+-                               left: "0.541033%"
++                               top: "40.239379532034825%"
+-                               top: "92.1054%"
++                               width: 3.019465504733498
+-                               width: "3.67861px"
++                               height: 3.019465504733498
+-                               height: "3.67861px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"73.1...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "73.13506131576929%"
+-                               left: "92.0232%"
++                               top: "37.64360352574302%"
+-                               top: "56.7523%"
++                               width: 5.2727886818664835
+-                               width: "3.6051px"
++                               height: 5.2727886818664835
+-                               height: "3.6051px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"5.82...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "5.827168108840553%"
+-                               left: "96.8631%"
++                               top: "12.634289233255757%"
+-                               top: "51.2459%"
++                               width: 4.259969475166619
+-                               width: "2.3374px"
++                               height: 4.259969475166619
+-                               height: "2.3374px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"6.58...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "6.585498766633691%"
+-                               left: "57.081%"
++                               top: "34.519306842044%"
+-                               top: "86.0023%"
++                               width: 4.315753110315842
+-                               width: "3.54542px"
++                               height: 4.315753110315842
+-                               height: "3.54542px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"99.9...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "99.9803538147156%"
+-                               left: "99.9715%"
++                               top: "36.26024715983546%"
+-                               top: "55.6963%"
++                               width: 3.3179465671744204
+-                               width: "4.44235px"
++                               height: 3.3179465671744204
+-                               height: "4.44235px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"98.5...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "98.55571286770733%"
+-                               left: "83.0332%"
++                               top: "46.11602958166002%"
+-                               top: "41.44%"
++                               width: 3.6437402655295537
+-                               width: "4.21709px"
++                               height: 3.6437402655295537
+-                               height: "4.21709px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"43.4...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "43.47872305379293%"
+-                               left: "64.0528%"
++                               top: "28.404557973241275%"
+-                               top: "37.9193%"
++                               width: 2.921069796667361
+-                               width: "3.26247px"
++                               height: 2.921069796667361
+-                               height: "3.26247px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"48.2...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "48.23509919146267%"
+-                               left: "29.5269%"
++                               top: "66.99524433844468%"
+-                               top: "21.9083%"
++                               width: 4.4101658273326745
+-                               width: "3.492px"
++                               height: 4.4101658273326745
+-                               height: "3.492px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"38.9...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "38.93456204588934%"
+-                               left: "23.2999%"
++                               top: "96.36532076295353%"
+-                               top: "12.9142%"
++                               width: 4.272097106757622
+-                               width: "3.48147px"
++                               height: 4.272097106757622
+-                               height: "3.48147px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"13.9...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "13.957531031549298%"
+-                               left: "31.8599%"
++                               top: "70.84961274496638%"
+-                               top: "7.70071%"
++                               width: 4.700991201738249
+-                               width: "5.1296px"
++                               height: 4.700991201738249
+-                               height: "5.1296px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"93.1...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "93.19483391602003%"
+-                               left: "89.5717%"
++                               top: "38.802024230966396%"
+-                               top: "5.7311%"
++                               width: 2.079439487980434
+-                               width: "3.25808px"
++                               height: 2.079439487980434
+-                               height: "3.25808px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"55.3...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "55.32835618203569%"
+-                               left: "65.4913%"
++                               top: "7.883443557939341%"
+-                               top: "84.3276%"
++                               width: 5.834052297624516
+-                               width: "2.95306px"
++                               height: 5.834052297624516
+-                               height: "2.95306px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"95.3...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "95.32244143187802%"
+-                               left: "21.6291%"
++                               top: "92.64956705140854%"
+-                               top: "20.4294%"
++                               width: 3.1069705186903334
+-                               width: "2.95387px"
++                               height: 3.1069705186903334
+-                               height: "2.95387px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"71.1...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "71.13591572538894%"
+-                               left: "61.829%"
++                               top: "31.25455516257555%"
+-                               top: "37.7242%"
++                               width: 4.806457471642126
+-                               width: "5.01101px"
++                               height: 4.806457471642126
+-                               height: "5.01101px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"51.1...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "51.11582467013669%"
+-                               left: "49.6958%"
++                               top: "22.706535284687146%"
+-                               top: "97.524%"
++                               width: 2.7685706435237774
+-                               width: "3.53782px"
++                               height: 2.7685706435237774
+-                               height: "3.53782px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"57.4...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "57.42015119893503%"
+-                               left: "61.0267%"
++                               top: "48.66535725777494%"
+-                               top: "4.67561%"
++                               width: 2.6616333556714133
+-                               width: "3.47642px"
++                               height: 2.6616333556714133
+-                               height: "3.47642px"
+                              }}
+                              ref={function}
+                            >
+                          <motion.div className="absolute r..." style={{left:"21.1...", ...}} animate={{y:[...], ...}} ...>
+                            <div
+                              className="absolute rounded-full bg-red-violet/30"
+                              style={{
++                               left: "21.198254445601904%"
+-                               left: "6.15109%"
++                               top: "95.12602290486133%"
+-                               top: "28.9997%"
++                               width: 5.17738722608836
+-                               width: "2.71544px"
++                               height: 5.17738722608836
+-                               height: "2.71544px"
+                              }}
+                              ref={function}
+                            >
+                      ...
+ @ http://localhost:4322/node_modules/.vite/deps/@astrojs_react_client__js.js?v=0279fbe6:4073
+[   10329ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ http://localhost:4322/src/components/ScratchCard.tsx:75

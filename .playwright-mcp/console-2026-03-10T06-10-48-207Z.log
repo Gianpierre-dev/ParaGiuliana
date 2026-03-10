@@ -1,0 +1,10 @@
+[    1088ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Lt (https://para-giuliana-production.up.railway.app/_astro/client.Dc9Vh3na.js:32:31372)
+    at By (https://para-giuliana-production.up.railway.app/_astro/client.Dc9Vh3na.js:32:82388)
+    at cv (https://para-giuliana-production.up.railway.app/_astro/client.Dc9Vh3na.js:32:116483)
+    at Im (https://para-giuliana-production.up.railway.app/_astro/client.Dc9Vh3na.js:32:116456)
+    at km (https://para-giuliana-production.up.railway.app/_astro/client.Dc9Vh3na.js:32:116316)
+    at tv (https://para-giuliana-production.up.railway.app/_astro/client.Dc9Vh3na.js:32:111880)
+    at Tv (https://para-giuliana-production.up.railway.app/_astro/client.Dc9Vh3na.js:32:123887)
+    at MessagePort.Ya (https://para-giuliana-production.up.railway.app/_astro/client.Dc9Vh3na.js:9:1641)
+[ 9273880ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://para-giuliana-production.up.railway.app/_astro/App.P-CWRV3s.js:17

@@ -1,0 +1,11 @@
+[     284ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Lt (http://localhost:4321/_astro/client.Dc9Vh3na.js:32:31372)
+    at By (http://localhost:4321/_astro/client.Dc9Vh3na.js:32:82388)
+    at cv (http://localhost:4321/_astro/client.Dc9Vh3na.js:32:116483)
+    at Im (http://localhost:4321/_astro/client.Dc9Vh3na.js:32:116456)
+    at km (http://localhost:4321/_astro/client.Dc9Vh3na.js:32:116316)
+    at tv (http://localhost:4321/_astro/client.Dc9Vh3na.js:32:111880)
+    at Tv (http://localhost:4321/_astro/client.Dc9Vh3na.js:32:123887)
+    at MessagePort.Ya (http://localhost:4321/_astro/client.Dc9Vh3na.js:9:1641)
+[   53804ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ http://localhost:4321/_astro/App.Bnqibq9a.js:17
+[  358460ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4321/img/video-poster.jpg:0
