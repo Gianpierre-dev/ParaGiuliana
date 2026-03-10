@@ -1,19 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-deep-black: #0a0a0a;
+  /* Colores principales */
+  --color-deep-black: #050505;
+  --color-rich-black: #0a0a0a;
   --color-red-violet: #c41e5c;
   --color-soft-pink: #ff6b9d;
+  --color-hot-pink: #ff2d75;
+  --color-purple: #8b5cf6;
+  --color-gold: #fbbf24;
 
   --font-family-sans: 'Inter', system-ui, sans-serif;
 
+  /* Animaciones */
   --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
   --animate-float: float 3s ease-in-out infinite;
+  --animate-float-slow: float 6s ease-in-out infinite;
   --animate-heartbeat: heartbeat 1.5s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-sparkle: sparkle 1.5s ease-in-out infinite;
+  --animate-bounce-soft: bounce-soft 2s ease-in-out infinite;
+  --animate-glow-pulse: glow-pulse 3s ease-in-out infinite;
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px rgba(196, 30, 92, 0.5); }
-    50% { box-shadow: 0 0 40px rgba(196, 30, 92, 0.8); }
+    0%, 100% { box-shadow: 0 0 20px rgba(196, 30, 92, 0.5), 0 0 40px rgba(196, 30, 92, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(196, 30, 92, 0.8), 0 0 80px rgba(196, 30, 92, 0.5); }
   }
 
   @keyframes float {
@@ -23,7 +34,30 @@
 
   @keyframes heartbeat {
     0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+    14% { transform: scale(1.15); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.15); }
+    70% { transform: scale(1); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  @keyframes bounce-soft {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(255, 107, 157, 0.5)); }
+    50% { filter: drop-shadow(0 0 25px rgba(255, 107, 157, 0.8)); }
   }
 }
 
@@ -34,14 +68,60 @@
 
   body {
     @apply bg-deep-black text-white antialiased;
+    background: radial-gradient(ellipse at center, #0a0a0a 0%, #050505 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply px-8 py-4 bg-red-violet text-white font-semibold rounded-full
-           transition-all duration-300 hover:bg-soft-pink
-           animate-pulse-glow cursor-pointer;
+    @apply px-8 py-4 text-white font-bold rounded-full
+           transition-all duration-300 cursor-pointer
+           text-lg tracking-wide;
+    background: linear-gradient(135deg, #c41e5c 0%, #ff2d75 50%, #c41e5c 100%);
+    background-size: 200% 200%;
+    box-shadow: 0 0 30px rgba(196, 30, 92, 0.6),
+                0 4px 15px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    animation: pulse-glow 2s ease-in-out infinite, shimmer 3s linear infinite;
+  }
+
+  .btn-primary:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 0 50px rgba(255, 107, 157, 0.8),
+                0 8px 25px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #ff6b9d 0%, #c41e5c 50%, #ff6b9d 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 107, 157, 0.5),
+                 0 0 20px rgba(255, 107, 157, 0.3),
+                 0 0 40px rgba(196, 30, 92, 0.2);
+  }
+
+  .card-glow {
+    box-shadow: 0 0 30px rgba(196, 30, 92, 0.3),
+                0 10px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -60,6 +140,31 @@
 
   .rotate-y-180 {
     transform: rotateY(180deg);
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 20px currentColor;
+  }
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c41e5c, #ff6b9d);
+  border-radius: 3px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .btn-primary {
+    @apply px-6 py-3 text-base;
   }
 }
 
