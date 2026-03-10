@@ -1,9 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import App from '../components/App';
 ---
 
 <Layout title="Para Giuliana">
-  <main>
-    <p class="text-center py-20 text-2xl">Cargando experiencia...</p>
-  </main>
+  <App client:load />
 </Layout>
