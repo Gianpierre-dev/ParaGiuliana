@@ -4,8 +4,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "pnpm start",
-    "healthcheckPath": "/",
-    "healthcheckTimeout": 100
+    "startCommand": "npx serve dist -s -l ${PORT:-3000}"
   }
 }
