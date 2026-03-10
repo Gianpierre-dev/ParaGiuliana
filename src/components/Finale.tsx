@@ -175,7 +175,6 @@ export default function Finale() {
               controls
               className="w-full"
               playsInline
-              poster="/img/video-poster.jpg"
             />
           </div>
         </motion.div>
