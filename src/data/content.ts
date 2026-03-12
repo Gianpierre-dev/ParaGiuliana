@@ -53,6 +53,11 @@ export const cards = [
     message: "Siempre real",
     alt: "Giuliana natural",
   },
+  {
+    image: "/img/1.jpg",
+    message: "Juntos, así de simple",
+    alt: "Juntos en la calle",
+  },
 ];
 
 export const quizQuestions = [
