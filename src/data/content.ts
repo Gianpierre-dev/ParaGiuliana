@@ -55,7 +55,7 @@ export const cards = [
   },
   {
     image: "/img/1.jpg",
-    message: "Juntos, así de simple",
+    message: "Los diamantes se forman bajo presión",
     alt: "Juntos en la calle",
   },
 ];
