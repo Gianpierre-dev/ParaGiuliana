@@ -28,7 +28,8 @@ export default function FlipCard({ image, message, alt, index }: FlipCardProps) 
       whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1, type: 'spring' }}
       viewport={{ once: true }}
-      className="perspective-1000 w-full aspect-[3/4]"
+      className="w-full aspect-[3/4]"
+      style={{ perspective: '1000px' }}
     >
       <motion.div
         onClick={handleFlip}
@@ -38,17 +39,18 @@ export default function FlipCard({ image, message, alt, index }: FlipCardProps) 
         aria-label={`Flip card: ${alt}`}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        className={`
-          relative w-full h-full cursor-pointer
-          preserve-3d transition-transform duration-700
-          ${isFlipped ? 'rotate-y-180' : ''}
-        `}
+        animate={{ rotateY: isFlipped ? 180 : 0 }}
+        transition={{ duration: 0.6, ease: 'easeInOut' }}
+        className="relative w-full h-full cursor-pointer"
+        style={{ transformStyle: 'preserve-3d' }}
       >
         {/* Back - revealed state (image + message) */}
         <div
-          className="absolute inset-0 backface-hidden rotate-y-180 rounded-2xl sm:rounded-3xl overflow-hidden"
+          className="absolute inset-0 rounded-2xl sm:rounded-3xl overflow-hidden"
           style={{
             boxShadow: '0 0 40px rgba(196, 30, 92, 0.4), 0 20px 40px rgba(0, 0, 0, 0.5)',
+            backfaceVisibility: 'hidden',
+            transform: 'rotateY(180deg)',
           }}
         >
           {/* Decorative border */}
@@ -81,11 +83,12 @@ export default function FlipCard({ image, message, alt, index }: FlipCardProps) 
 
         {/* Front - initial state (heart symbol) */}
         <div
-          className="absolute inset-0 backface-hidden rounded-2xl sm:rounded-3xl overflow-hidden"
+          className="absolute inset-0 rounded-2xl sm:rounded-3xl overflow-hidden"
           style={{
             background: 'linear-gradient(135deg, #c41e5c 0%, #1a0a10 50%, #c41e5c 100%)',
             backgroundSize: '200% 200%',
             boxShadow: '0 0 30px rgba(196, 30, 92, 0.3), 0 15px 30px rgba(0, 0, 0, 0.4)',
+            backfaceVisibility: 'hidden',
           }}
         >
           {/* Decorative border */}
