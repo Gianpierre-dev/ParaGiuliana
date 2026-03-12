@@ -45,7 +45,7 @@ export const cards = [
   },
   {
     image: "/img/unnamed3.jpg",
-    message: "Shot on iPhone, vibes on point",
+    message: "Never give up",
     alt: "Giuliana selfie",
   },
   {
