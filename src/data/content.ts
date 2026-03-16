@@ -35,7 +35,7 @@ export const timelineSections = [
 export const cards = [
   {
     image: "/img/unnamed.jpg",
-    message: "Esos lentes que ven el futuro",
+    message: "Mi regalito del cielo",
     alt: "Giuliana con lentes",
   },
   {
