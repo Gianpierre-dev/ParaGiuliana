@@ -58,6 +58,16 @@ export const cards = [
     message: "Los diamantes se forman bajo presión",
     alt: "Juntos en la calle",
   },
+  {
+    image: "/img/2.jpg",
+    message: "Momentos que valen oro",
+    alt: "Giuliana en restaurante",
+  },
+  {
+    image: "/img/5.png",
+    message: "Siempre brillando",
+    alt: "Giuliana selfie espejo",
+  },
 ];
 
 export const quizQuestions = [
